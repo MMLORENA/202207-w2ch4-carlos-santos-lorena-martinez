@@ -10,6 +10,11 @@ class SkylabArray {
     }
     this.length = iterationCount;
   }
+
+  push(value) {
+    this[this.length] = value;
+    this.length += 1;
+  }
 }
 
 module.exports = SkylabArray;
