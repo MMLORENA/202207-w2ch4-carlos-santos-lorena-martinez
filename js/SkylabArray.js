@@ -1,8 +1,10 @@
 class SkylabArray {
   constructor(...values) {
-    this[0] = values[0];
-    this[1] = values[1];
+    // eslint-disable-next-line no-restricted-syntax
+    for (const index of values.keys()) {
+      this[index] = values[index];
+    }
   }
 }
 
-const test = new SkylabArray(3, 8, 10, 2);
+module.exports = SkylabArray;
