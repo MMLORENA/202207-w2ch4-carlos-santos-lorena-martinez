@@ -25,7 +25,7 @@ describe("Given a SkylabArray object", () => {
 describe("Given a SkylabArray object", () => {
   describe("When a new instance is created and it recives 7, 0, 5 and 43", () => {
     describe("When it's push method its invoced and it recives 4", () => {
-      test("Then it should return { '0': 7, '1': 0, '2': 5, '3': 43, '4': 4,length: 4 }", () => {
+      test("Then the instance should return { '0': 7, '1': 0, '2': 5, '3': 43, '4': 4,length: 4 }", () => {
         const expectedResult = { 0: 7, 1: 0, 2: 5, 3: 43, 4: 4, length: 5 };
         const instance = new SkylabArray(7, 0, 5, 43);
         instance.push(4);
@@ -39,7 +39,7 @@ describe("Given a SkylabArray object", () => {
 describe("Given a SkylabArray object", () => {
   describe("When a new instance is created and it recives 34 and 23", () => {
     describe("When it's some method its invoced and it recives NaN", () => {
-      test("Then it should return { '0': 34, '1': 53, length: 3 }", () => {
+      test("Then the instance should return { '0': 34, '1': 53, length: 3 }", () => {
         const expectedResult = { 0: 34, 1: 53, 2: NaN, length: 3 };
         const instance = new SkylabArray(34, 53);
         instance.push(NaN);
@@ -52,7 +52,7 @@ describe("Given a SkylabArray object", () => {
 
 describe("Given a SkylabArray object", () => {
   describe("When a new instance is created and it recives 34 and 53", () => {
-    describe("When it's push method its invoced and it recives (x) => x < 73)", () => {
+    describe("When it's some method its invoced and it recives (x) => x < 73)", () => {
       test("Then it should return true", () => {
         const expectedResult = true;
         const instance = new SkylabArray(34, 53);
@@ -66,7 +66,7 @@ describe("Given a SkylabArray object", () => {
 
 describe("Given a SkylabArray object", () => {
   describe("When a new instance is created and it recives 'Hola', 'soy' and 'Carlos'", () => {
-    describe("When it's push method its invoced and it recives (x) => x === 'Carlos')", () => {
+    describe("When it's some method its invoced and it recives (x) => x === 'Carlos')", () => {
       test("Then it should return true", () => {
         const expectedResult = true;
         const instance = new SkylabArray("Hola", "soy", "Carlos");
