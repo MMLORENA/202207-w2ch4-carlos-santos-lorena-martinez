@@ -1,4 +1,4 @@
-const SkylabArray = require("./SkylabArray.js");
+const SkylabArray = require("./SkylabArray-lorena.js");
 
 describe("Given a constructor functions", () => {
   describe("When it's born a new object using the SkylabArray class and recives as arguments 3,8,10,2 as values", () => {
