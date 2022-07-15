@@ -1,19 +1,19 @@
 /* eslint-disable no-restricted-syntax */
 class SkylabArray {
-  length;
+  lengthCounter;
 
   constructor(...values) {
-    let iterationCount = 0;
+    let length = 0;
     for (const index of values.keys()) {
       this[index] = values[index];
-      iterationCount += 1;
+      length += 1;
     }
-    this.length = iterationCount;
+    this.length = length;
   }
 
   push(value) {
-    this[this.length] = value;
-    this.length += 1;
+    this[this.lengthCounter] = value;
+    this.lengthCounter += 1;
   }
 
   some(callback) {
