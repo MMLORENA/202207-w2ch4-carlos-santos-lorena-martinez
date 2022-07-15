@@ -77,3 +77,17 @@ describe("Given a SkylabArray object", () => {
     });
   });
 });
+
+describe("Given a SkylabArray object", () => {
+  describe("When a new instance is created and it recives 'Hola' and 'Mundo!'", () => {
+    describe("When it's some method its invoced and it recives (x) => x === 2)", () => {
+      test("Then it should return false", () => {
+        const expectedResult = false;
+        const instance = new SkylabArray("Hola", "Mundo!");
+        const result = instance.some((x) => x === 2);
+
+        expect(result).toEqual(expectedResult);
+      });
+    });
+  });
+});
