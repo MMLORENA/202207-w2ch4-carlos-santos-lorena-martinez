@@ -19,7 +19,7 @@ class SkylabArray {
   some(callback) {
     let isMatched = false;
     for (const value in this) {
-      if (callback(this[value])) {
+      if (callback(this[value]) && value !== "length") {
         isMatched = true;
       }
     }
