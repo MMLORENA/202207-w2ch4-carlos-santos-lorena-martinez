@@ -3,12 +3,12 @@ class SkylabArray {
   length;
 
   constructor(...values) {
-    let iterationCount = 0;
+    let length = 0;
     for (const index of values.keys()) {
       this[index] = values[index];
-      iterationCount += 1;
+      length += 1;
     }
-    this.length = iterationCount;
+    this.length = length;
   }
 
   push(value) {
